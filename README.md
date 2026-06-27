@@ -7,11 +7,10 @@
 ![](https://imgur.com/yf7EJpo.png)
 
 ```bash
-import { NextRequest } from "next/server";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
 
-export function proxy(request: Request){
+export function proxy(request:NextRequest){
     console.log("proxy is new name of middleware")
 }
 
@@ -25,11 +24,10 @@ export const config = {
 ![](https://imgur.com/nQf2tlz.png)
 
 ```bash
-import { NextRequest } from "next/server";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
 
-export function proxy(request: Request){
+export function proxy(request:NextRequest){
     console.log("proxy is new name of middleware")
 }
 
