@@ -20,3 +20,21 @@ export const config = {
 }
 ```
 ---
+
+### Include about page for proxy executed.
+![](https://imgur.com/nQf2tlz.png)
+
+```bash
+import { NextRequest } from "next/server";
+import { NextResponse } from "next/server";
+
+
+export function proxy(request: Request){
+    console.log("proxy is new name of middleware")
+}
+
+export const config = {
+    matcher:['/api/:path*', '/about',]
+}
+```
+---
